@@ -1,11 +1,11 @@
 class Logic
 {
-    public void PrintOddNumbers(int iNo)
+    public void PrintDivisibleBY2And3(int iNo)
     {
         int iCnt = 0;
-         for(iCnt = 1; iCnt <= iNo; iCnt++)
+        for(iCnt =1; iCnt <= iNo; iCnt++)
         {
-            if(iCnt % 2 != 0)
+            if(iCnt % 2 == 0 && iCnt % 3 == 0)
             {
                 System.out.println(iCnt);
             }
@@ -13,11 +13,13 @@ class Logic
     }
 }
 
-public class Program18_3 
+
+
+public class Program21_5 
 {
     public static void main(String[] args) 
     {
         Logic lobj = new Logic();
-        lobj.PrintOddNumbers(20);
+        lobj.PrintDivisibleBY2And3(30);
     }
 }
